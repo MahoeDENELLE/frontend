@@ -1,0 +1,588 @@
+
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    padding: 0 20px;
+  }
+  
+  .login-form {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .login-form input[type="text"]:focus,
+  .login-form input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  .dashboard-nav {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .dashboard-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .dashboard-nav ul li {
+    margin-bottom: 15px;
+  }
+  
+  .dashboard-nav ul li a {
+    display: block;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-nav ul li a:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .dashboard-container {
+      padding: 10px;
+    }
+    
+    .dashboard-nav ul li a {
+      font-size: 0.9em;
+      padding: 12px;
+    }
+  }
+
+  
+  .create-account-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    position: relative;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  
+  h2 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+.create-type-tvc-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f2f5;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.create-account-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.create-type-tvc-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-type-tvc-container label {
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 1em;
+  color: #333;
+}
+
+.create-type-tvc-container input {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.view-types-tvc-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.view-types-tvc-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.view-types-tvc-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.view-types-tvc-container th, .view-types-tvc-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.view-types-tvc-container th {
+  background-color: #007bff;
+  color: white;
+}
+
+
+
+.view-types-tvc-container input[type="number"] {
+  padding: 5px;
+  width: 80px;
+}
+
+
+
+.create-tvc-container {
+  max-width: 100%; 
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  background-color: white; 
+  margin: 10px; 
+}
+
+.create-tvc-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5em; 
+  color: #333; 
+}
+
+.create-tvc-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-tvc-container input,
+.create-tvc-container select {
+  margin-bottom: 10px;
+  padding: 12px; 
+  font-size: 1em;
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  transition: border 0.3s; 
+}
+
+.create-tvc-container input:focus,
+.create-tvc-container select:focus {
+  border-color: #007bff; 
+}
+
+.tvc-types-selector {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  margin-bottom: 15px;
+}
+
+.quantity-input {
+  padding: 10px;
+  font-size: 1em; 
+  border: 1px solid #ddd; 
+  border-radius: 4px; 
+  transition: border 0.3s; 
+}
+
+.add-type-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; 
+  transition: background-color 0.3s; 
+}
+
+.add-type-button:hover {
+  background-color: #0056b3;
+}
+
+.selected-types-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.selected-type-item {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px; 
+  border: 1px solid #007bff; 
+  border-radius: 4px; 
+  margin-bottom: 10px; 
+  background-color: #f8f9fa; 
+  transition: background-color 0.3s; 
+}
+
+.selected-type-item:hover {
+  background-color: #e9ecef; 
+}
+
+.quantity-input {
+  width: 60px; 
+  padding: 5px; 
+  font-size: 1em; 
+  border: 1px solid #007bff; 
+  border-radius: 4px; 
+  transition: border 0.3s; 
+}
+
+
+button {
+  padding: 12px; 
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em; 
+  transition: background-color 0.3s; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .create-tvc-container {
+    padding: 15px; 
+  }
+
+  .create-tvc-container h2 {
+    font-size: 1.4em; 
+  }
+
+  .create-tvc-container input,
+  .create-tvc-container select,
+  button {
+    font-size: 0.9em; 
+  }
+}
+
+
+.view-dossiers-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto; 
+}
+
+.view-dossiers-container h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+
+.view-dossiers-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.view-dossiers-container li {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #fff;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.view-dossiers-container li:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.icon {
+  font-size: 20px; 
+  margin-right: 10px; 
+  color: #007bff; 
+}
+
+.dossier-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.dossier-name {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.dossier-address {
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .view-dossiers-container h2 {
+      font-size: 20px;
+  }
+
+  .view-dossiers-container li {
+      font-size: 14px;
+      padding: 10px; 
+  }
+}
+
+
+.dossier-details-container {
+  max-width: 600px;
+  margin: auto;
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.dossier-details-container h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center; 
+  margin-bottom: 20px;
+}
+
+.dossier-detail {
+  margin: 10px 0;
+}
+
+.dossier-detail strong {
+  color: #007bff; 
+}
+
+.tvc-types {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.tvc-types li {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+}
+
+.tvc-types input {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 15px;
+}
+
+
+.button-container button {
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+
+@media (max-width: 600px) {
+  .dossier-details-container h2 {
+      font-size: 20px;
+  }
+
+  .dossier-detail {
+      font-size: 14px;
+  }
+
+  .dossier-details-container button {
+      font-size: 14px;
+  }
+}
+
+.confirm-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dialog-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dialog-buttons button:first-child {
+  background-color: red;
+  color: white;
+}
+
+.dialog-buttons button:last-child {
+  background-color: #ccc;
+}
+
