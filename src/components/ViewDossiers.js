@@ -14,7 +14,7 @@ const ViewDossiers = () => {
     useEffect(() => {
         const fetchDossiers = async () => {
             try {
-                const response = await fetch('http://192.168.1.47:5000/tvc-dossiers');
+                const response = await fetch('http://194.164.202.129:5000/tvc-dossiers');
                 const data = await response.json();
                 if (data.success) {
                     setDossiers(data.dossiers);

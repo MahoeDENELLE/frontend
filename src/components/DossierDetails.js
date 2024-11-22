@@ -17,7 +17,7 @@ const DossierDetails = () => {
 
     const fetchDossier = useCallback(async () => {
         try {
-            const response = await fetch(`http://192.168.1.47:5000/tvc-dossier/${id}`);
+            const response = await fetch(`http://194.164.202.129:5000/tvc-dossier/${id}`);
             const data = await response.json();
             if (data.success) {
                 setDossier(data.dossier);
@@ -30,7 +30,7 @@ const DossierDetails = () => {
 
     const fetchAllTypes = useCallback(async () => {
         try {
-            const response = await fetch('http://192.168.1.47:5000/types-tvc');
+            const response = await fetch('http://194.164.202.129:5000/types-tvc');
             const data = await response.json();
             if (data.success) {
                 setAllTypes(data.types);
@@ -104,7 +104,7 @@ const DossierDetails = () => {
         }
     
         try {
-            const response = await fetch(`http://192.168.1.47:5000/tvc-dossier/${id}`, {
+            const response = await fetch(`http://194.164.202.129:5000/tvc-dossier/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -135,7 +135,7 @@ const DossierDetails = () => {
 
     const handleDeleteDossier = async () => {
         try {
-            const response = await fetch(`http://192.168.1.47:5000/tvc-dossier/${id}`, {
+            const response = await fetch(`http://194.164.202.129:5000/tvc-dossier/${id}`, {
                 method: 'DELETE',
             });
 

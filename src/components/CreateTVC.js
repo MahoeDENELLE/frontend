@@ -26,7 +26,7 @@ const CreateTVC = () => {
 
     const fetchTypes = async () => {
         try {
-            const response = await fetch('http://192.168.1.47:5000/types-tvc');
+            const response = await fetch('http://194.164.202.129:5000/types-tvc');
             const data = await response.json();
             if (data.success) setTypes(data.types);
         } catch (error) {
@@ -73,7 +73,7 @@ const CreateTVC = () => {
         const dossierData = { firstName, lastName, phone, address, postalCode, city, appointmentDate, tvcTypes, commentaire };
     
         try {
-            const response = await fetch('http://192.168.1.47:5000/create-tvc', {
+            const response = await fetch('http://194.164.202.129:5000/create-tvc', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(dossierData),

@@ -11,7 +11,7 @@ const CreateTypeTVC = () => {
         event.preventDefault();
 
         try {
-          const response = await fetch('http://192.168.1.47:5000/create-type-tvc', {
+          const response = await fetch('http://194.164.202.129:5000/create-type-tvc', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
